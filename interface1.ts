@@ -23,13 +23,16 @@ class Instagram implements TakePhoto{
 
 }
 
-class Youtube implements TakePhoto{
+class Youtube implements TakePhoto,Story{
    
     constructor(
         public cameraMode:string,
         public filter:string,
         public burst:number
     ){}
+    createStory(): void {
+        console.log("story created")
+    }
 
 }
 
